@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<style>
+  /* Heading Styles */
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    color: white;
+  }
+
+  /* Paragraph Styles */
+  p {
+    font-size: 20px;
+    color: #555;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+  .card {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 30%;
+    margin-bottom: 20px;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+
+  .card > a{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  .card:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  .card-header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .card-header h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  .card-body {
+    padding: 20px;
+    display: flex;
+    position: relative;
+    flex: 1;
+    height: 65%;
+  }
+
+  .card-body ul li {
+    padding: 0;
+    margin: 10px;
+    list-style: lower-roman;
+    font-size: 18px;
+    color: #777;
+  }
+
+  .card-body li {
+    margin-bottom: 10px;
+  }
+
+  .button {
+    display: flex;
+    position: relative;
+    background-color: #333;
+    flex: 1;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .button:hover {
+    background-color: #555;
+    cursor: pointer;
+  }
+
+  .card-basic .card-header {
+    background-color: #1abc9c;
+  }
+
+  .card-standard .card-header {
+    background-color: #3498db;
+  }
+
+  .card-premium .card-header {
+    background-color: #9b59b6;
+  }
+</style>
+
+<body>
+
+  <header>
+    <h1 class="heading">Offer</h1>
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="offer.html">Offer</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <section class="offer">
+    <h1 style="color: white">Welcome to our Dress Website's Offer Page</h1>
+    <p>We're excited to showcase some of our latest and greatest dresses, all available at unbeatable prices. Whether
+      you're looking for a chic cocktail dress or a flowing maxi, we've got you covered.</p>
+    <p>Don't miss out on these amazing offers! Browse our selection of dresses and find the perfect one for you. We
+      offer
+      a wide range of sizes and styles to fit every body type and taste. Shop now and enjoy our amazing deals!</p>
+    <!-- <div class="box-container">
+      <div class="box">
+        <h1 class="title">Basic</h1>
+        <div class="price">
+          <h3>$10<span>/mo</span></h3>
+        </div>
+        <ul>
+
+          <li>xywdeqi dihqed</li>
+          <li>xywdeqi dihqed</li>
+          <li>xywdeqi dihqed</li>
+          <li>xywdeqi dihqed</li>
+          <li>xywdeqi dihqed</li>
+
+        </ul>
+        <a href="#"><button class="btn">Check Out</button></a>
+      </div>
+      <div class="box">
+        <h1 class="title">Standard</h1>
+        <div class="price">
+          <h3>$50<span>/mo</span></h3>
+        </div>
+        <ul>
+
+          <li>xywdeqi dihqed</li>
+          <li>xywdeqi dihqed</li>
+          <li>xywdeqi dihqed</li>
+          <li>xywdeqi dihqed</li>
+          <li>xywdeqi dihqed</li>
+
+        </ul>
+        <a href="#"><button class="btn">Check Out</button></a>
+      </div>
+      <div class="box">
+        <h1 class="title">Premium</h1>
+        <div class="price">
+          <h3>$100<span>/mo</span></h3>
+        </div>
+        <ul>
+
+          <li>xywdeqi dihqed</li>
+          <li>xywdeqi dihqed</li>
+          <li>xywdeqi dihqed</li>
+          <li>xywdeqi dihqed</li>
+          <li>xywdeqi dihqed</li>
+
+        </ul>
+        <a href="#"><button class="btn">Check Out</button></a>
+      </div>
+    </div> -->
+
+    <h1>Our Packages</h1>
+    <div class="container">
+      <div class="card card-basic">
+        <div class="card-header">
+          <h2>Basic Package</h2>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li>Access to 50 dress designs</li>
+            <li>Free shipping on all orders</li>
+            <li>No minimum purchase required</li>
+          </ul>
+        </div>
+        <a href="#" class="button">Buy Now</a>
+      </div>
+      <div class="card card-standard">
+        <div class="card-header">
+          <h2>Standard Package</h2>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li>Access to 100 dress designs</li>
+            <li>Free shipping on all orders</li>
+            <li>No minimum purchase required</li>
+            <li>Exclusive access to new designs</li>
+          </ul>
+        </div>
+        <a href="#" class="button">Buy Now</a>
+      </div>
+      <div class="card card-premium">
+        <div class="card-header">
+          <h2>Premium Package</h2>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li>Access to 200 dress designs</li>
+            <li>Free shipping on all orders</li>
+            <li>No minimum purchase required</li>
+            <li>Exclusive access to new designs</li>
+            <li>Personal stylist available</li>
+            <li>Customization options available</li>
+          </ul>
+        </div>
+        <a href="#" class="button">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Why Choose Us ?</h3>
+          <p style="color: #fff;">
+          Our products are cost-effective ,user friendly and easily get your expectations.We believe in quality control which is vitally important to us.we maintain our exclusive relationship with our customer and assure their complete sastisfaction.
+          </p>
+  
+        </div>
+        <div class="box">
+          <h3>Quick Links</h3>
+          <a href="home.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="categories.html">Categories</a>
+          <a href="offer.html">Offer</a></li>
+          <a href="contact.html">Contact</a>
+  
+        </div>
+        <div class="box">
+          <h1 style="color: black;">Subscribe to our Newsletter</h1>
+          <p style="color: #fff;">Enter your email address to receive our latest news and updates:</p>
+          <form action="">
+            <input type="email" name="email" placeholder="Enter your email address">
+            <button class="btn" onclick="sendMail()">Subscribe</button>
+          </form>
+  
+        </div>
+      </div>
+      <h1 class="credit">Created by<a href="#"> Sai sidharth </a> | all rights reserved.</h1>
+    </div>
+  
+    </footer>
+  
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/script.js/2.5.9/script.min.js"></script>
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>

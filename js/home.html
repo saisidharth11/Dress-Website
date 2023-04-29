@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="../css/style.css">
+
+  <script>
+    function sendMail() {
+      var recipient = "saisiddhartha0874@gmail.com";
+      var subject = "Subscription Request";
+      var emailInput = document.getElementsByName("email")[0];
+      var body = "Please subscribe me to your newsletter! My email address is: " + emailInput.value;
+      window.location.href = "mailto:" + recipient + "?subject=" + subject + "&body=" + body;
+    }
+  </script>
+</head>
+
+<body>
+
+  <header>
+
+    <h1 class="heading">Home</h1>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="offer.html">Offer</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <section class="home">
+    <div class="content">
+      <h2>Fashion eComerace Marketing</h2>
+      <p>Welcome to our website,We are so grateful and happy to serve the most amazing clients.</p>
+      <a href="categories.html"><button class="btn">Get started</button></a>
+
+
+    </div>
+    <div class="image">
+      <img src="../images/1unsplash.jpg" alt="" style="height: fit-content;width: 100%;">
+
+    </div>
+
+
+  </section>
+  <footer>
+  <div class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Why Choose Us ?</h3>
+        <p>
+        Our products are cost-effective ,user friendly and easily get your expectations.We believe in quality control which is vitally important to us.we maintain our exclusive relationship with our customer and assure their complete sastisfaction.
+        </p>
+
+      </div>
+      <div class="box">
+        <h3>Quick Links</h3>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="categories.html">Categories</a>
+        <a href="offer.html">Offer</a></li>
+        <a href="contact.html">Contact</a>
+
+      </div>
+      <div class="box">
+        <h1>Subscribe to our Newsletter</h1>
+        <p>Enter your email address to receive our latest news and updates:</p>
+        <form action="">
+          <input type="email" name="email" placeholder="Enter your email address">
+          <button class="btn" onclick="sendMail()">Subscribe</button>
+        </form>
+
+      </div>
+    </div>
+    <h1 class="credit">Created by<a href="#"> Sai sidharth </a> | all rights reserved.</h1>
+  </div>
+
+  </footer>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/script.js/2.5.9/script.min.js"></script>
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
